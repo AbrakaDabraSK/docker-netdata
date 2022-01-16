@@ -19,8 +19,8 @@ vim .env
 Edit default enviroment file if u need
 
 ```shell
-NETDATA_LOGIN_USER=<username>
-NETDATA_LOGIN_PASSWORD=<password>
+NETDATA_HOST=example.com
+NETDATA_PORT=19999
 ```
 
 Execute quit and save changes command, then press ENTER
