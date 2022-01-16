@@ -3,9 +3,9 @@ services:
   netdata:
     image: netdata/netdata
     container_name: netdata
-    hostname: example.com # set to fqdn of host
+    hostname: ${NETDATA_HOST}
     ports:
-      - 19999:19999
+      - ${NETDATA_PORT}:19999
     restart: unless-stopped
     cap_add:
       - SYS_PTRACE
